@@ -28,4 +28,11 @@ __PVGA:__ present value of a growing annuity
 * requires inputs **_rate_**, **_growth rate_**, **_number of periods_** and **_payments_**, in that order
 
 __FVGA:__ future value of a growing annuity
-* requires inputs **_rate_**, **_growth rate_**, **_number of periods_** and **_payments_**, in that order
+* requires inputs **_rate_**, **_growth rate_**, **_number of periods_** and **_growth rate_**, in that order
+
+__PVGP:__ present value of growing perpetuity
+* requires inputs **_rate_**, **_growth rate_**, **_growth rate_**, in that order
+
+__YTM:__ yield to maturity
+* requires inputs **_rate_**, **_number of periods_**, **_price_**, **_face_value_**, in that order
+

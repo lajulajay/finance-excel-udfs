@@ -19,45 +19,45 @@ Public Function NNPV(rate, ParamArray cashflows()) As Variant
 
 End Function
 
-Public Function PVA(rate As Single, nper As Integer, pmt As Double) As Double
+Public Function PVA(rate As Double, nper As Integer, pmt As Double) As Double
 
     PVA = (pmt / rate) * (1 - (1 / (1 + rate) ^ nper))
        
 End Function
 
-Public Function FVA(rate As Single, nper As Integer, pmt As Double) As Double
+Public Function FVA(rate As Double, nper As Integer, pmt As Double) As Double
 
     FVA = (pmt / rate) * ((1 / (1 + rate) ^ nper) - 1)
        
 End Function
 
-Public Function PVGA(rate As Single, growth As Single, nper As Integer, pmt As Double) As Double
+Public Function PVGA(rate As Double, growth As Double, nper As Integer, pmt As Double) As Double
 
     PVGA = (pmt / (rate - growth)) * (1 - ((1 + growth) / (1 + rate)) ^ nper)
 
 End Function
 
-Public Function FVGA(rate As Single, growth As Single, nper As Integer, pmt As Double) As Double
+Public Function FVGA(rate As Double, growth As Double, nper As Integer, pmt As Double) As Double
 
     FVGA = pmt * (((1 + rate) ^ nper) - ((1 + growth) ^ nper) / (rate - growth))
     
 End Function
 
-Public Function PVB(rate As Single, nper As Integer, pmt As Double, principal As Double) As Double
+Public Function PVB(rate As Double, nper As Integer, pmt As Double, principal As Double) As Double
 
     PVB = (pmt / rate) * (1 - (1 / (1 + rate) ^ nper)) + (principal / (1 + rate) ^ nper)
     
 End Function
 
-Public Function PVGP(rate As Single, growth As Single, pmt As Double) As Double
+Public Function PVGP(rate As Double, growth As Double, pmt As Double) As Double
 
     PVGP = payment / (rate - growth)
     
 End Function
 
-Public Function YTM(rate As Single, nper As Integer, price As Double, face_value As Double)
+Public Function YTM(rate As Double, nper As Integer, price As Double, face_value As Double) As Double
 
-    Dim coupon As Double, yield As Single, step As Double
+    Dim coupon As Double, yield As Double, step As Double
     Dim delta As Double, count As Long, x As Double
     
     coupon = rate * face_value

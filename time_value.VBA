@@ -27,7 +27,7 @@ End Function
 
 Public Function FVA(rate As Double, nper As Integer, pmt As Double) As Double
 
-    FVA = (pmt / rate) * ((1 / (1 + rate) ^ nper) - 1)
+    FVA = (pmt / rate) * ((1 + rate) ^ nper - 1)
        
 End Function
 

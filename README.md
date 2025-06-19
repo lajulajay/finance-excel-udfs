@@ -1,6 +1,6 @@
-# Finance-Excel-UDFS
+# Finance-Excel-UDFs
 
-Finance-Excel-UDFS is a collection of custom built finance Excel functions that can be used globally, i.e. in any Excel workbook.
+Finance-Excel-UDFs is a collection of custom built finance Excel **U**ser **D**efined **F**unction**s** that can be used globally, i.e. in any Excel workbook.
 
 ## How to use
 
